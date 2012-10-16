@@ -13,7 +13,11 @@
     </meta>
   </head>
   <body class='index'>
-    <section role='content'>
+    <header>
+      <h1>
+        <!-- Agile Design Camp 2012 -->
+        <img src="assets/images/agile-design-camp-2012-logo.png" />
+      </h1>
       <!-- %h1= link_to [@title, 'agile design camp 2012'].compact.join(' – '), root_path -->
       <!-- %nav -->
       <!-- %ul -->
@@ -26,13 +30,14 @@
       <!-- %li -->
       <!-- %a{ :href => '#four'} four -->
       <!-- %img#logo{ :src => 'content/stage-images/littlesmoere.jpg'} -->
+    </header>
+    <section role='content'>
       <!-- intended to to do media-query switching... -->
 <!-- - images = ["example", "example", "example"] -->
 <div class='tile4 superlarge'>
-  Nov XX, 2012
-  <br />
+  <h2>Nov XX, 2012</h2>
   Hamburg, Germany
-  <a href="something">somethifdgng</a>
+  <!-- / = link_to 'somethifdgng', 'something' -->
 </div>
 <div class='copy tile2 normal exp' id='what-is-agile'>
   <h2>what is agile?</h2>
@@ -54,7 +59,7 @@
   <h2 class='large'>Location</h2>
   <div class='content'>
     <p>
-      <img src="assets/media/map-placeholder-200.png" />
+      <img src="assets/images/map-placeholder-200.png" />
     </p>
     <p>
       Acando
@@ -86,7 +91,9 @@
 </div>
 <div class='tile4' id='sponsors'>
   <h2>sponsors</h2>
-  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+  <p><a href="http://www.agile42.com/"><img alt="Agile 42" src="content/images/agile-42-logo_1_2.png" /></a></p>
+  
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor.</p>
   <p>
     <a href='#'>want to sponsor, too?</a>
   </p>
@@ -105,10 +112,11 @@
     </section>
     <div class='clear'></div>
     <footer>
+      <div class='line'></div>
       <p>
         <!-- Created by -->
         <!-- = link_to 'filtercake', 'http://filtercake.com/' -->
-        . Powered by
+        Powered by
         <a href="http://pages.github.com/">Github pages</a>
         ,
         <a href="http://middlemanapp.com/">Middleman</a>
